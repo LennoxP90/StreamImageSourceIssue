@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image x:Name="testImage"
+             HeightRequest="200"
+             IsVisible="False"
+             HorizontalOptions="Center" />
+
+      <ImageButton x:Name="downloadImage"
+                   HeightRequest="180"
+                   WidthRequest="180"
+                   HorizontalOptions="Center"
+                   Source="ic_action_download_media"
+                   Clicked="downloadImage_Clicked"/>
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
